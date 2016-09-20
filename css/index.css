@@ -1,0 +1,177 @@
+
+.main {
+    background: #337ab7;
+    margin: 50px auto;
+    width: 1200px;
+    height: 600px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #999;
+}
+
+.left {
+    position: relative;
+    background: #122b40;
+    height: 100%;
+    width: 50px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    float: left;
+}
+
+.chat-list {
+    background: #e7e7e7;
+    height: 100%;
+    width: 250px;
+    float: left;
+}
+
+.right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d9edf7;
+    height: 100%;
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    clear: right;
+}
+
+.left ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left ul li {
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.left ul li img {
+    width: 26px;
+    height: 26px;
+    margin: 12px;
+    border-radius: 3px;
+    /*border: 1px solid red;*/
+}
+
+.left ul li img:hover {
+    box-shadow: 0 0 10px #999;
+}
+
+.left ul li:hover .unactive {
+    color: #fff;
+    text-shadow: 0 0 10px #999;
+}
+
+.left ul li span {
+    width: 50px;
+    text-align: center;
+}
+
+.left ul li .active {
+    color: #46b8da;
+}
+
+.left .setting {
+    bottom: 5px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    text-align: center;
+    position: absolute;
+}
+
+.left .setting:hover {
+    cursor: pointer;
+    color: #fff;
+    text-shadow: 0 0 10px #999;
+}
+
+.left span {
+    color: #d9edf7;
+    font-size: 22px;
+}
+
+/*¡ƒÃÏ“≥*/
+
+.chat-list .search {
+    padding: 8px;
+}
+
+.chat-list .search .input-group {
+    margin: 5px 0;
+}
+.chat-list .search .input-group span:hover{
+    color: #000;
+    text-shadow: 0 0 10px #aaa;
+}
+
+.chat-list .search span {
+    cursor: pointer;
+}
+
+.chat-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 540px;
+}
+
+.chat-list ul li {
+    /*position: relative;*/
+    width: 250px;
+    height: 64px;
+    cursor: default;
+}
+
+.chat-list ul li .unread{
+    position: inherit;
+    left: 48px;
+    top: 8px;
+    display: inline-block;
+    border-radius: 4px;
+    width: 8px;
+    height: 8px;
+    background: red;
+    z-index: 999;
+}
+
+.chat-list ul li img {
+    /*border: 1px solid #080808;*/
+    position: inherit;
+    width: 40px;
+    height: 40px;
+    left: 12px;
+    top: 12px;
+    z-index: 999;
+}
+
+.chat-list ul li .chat-name {
+    font-size: 14px;
+    position: inherit;
+    left: 62px;
+    top: 12px;
+    z-index: 999;
+}
+
+.chat-list ul li .date {
+    color: #aaa;
+    font-size: 12px;
+    position: inherit;
+    left: 190px;
+    top: 12px;
+    z-index: 999;
+}
+
+.chat-list ul li .content {
+    color: #aaa;
+    font-size: 12px;
+    position: inherit;
+    left: 62px;
+    top: 32px;
+    z-index: 999;
+}
+
+.chat-list ul li:hover {
+    background: #ddd;
+}
